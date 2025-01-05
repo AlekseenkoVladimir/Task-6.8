@@ -1,0 +1,46 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(185, 206, 245);
+    padding: 50px;
+}
+
+ol {
+    list-style: none;
+    counter-reset: li;
+    line-height: 1.7em;
+}
+
+ol li::before {
+    counter-increment: li;
+    content: "Задание 6.8." counter(li) " – ";
+}
+
+li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: darkblue;
+}
+
+li a:hover {
+    color: rgb(100, 100, 136);
+    text-decoration: underline;
+}
+
+.back {
+    display: block;
+    width: fit-content;
+    color: #a1a1a1;
+    text-decoration: none;
+    padding: 5px;
+    border-top: 1px solid #a1a1a1;
+    border-bottom: 1px solid #a1a1a1;
+    margin-top: 100px;
+    
+    
+}
+
+.back:hover {
+    color: #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
